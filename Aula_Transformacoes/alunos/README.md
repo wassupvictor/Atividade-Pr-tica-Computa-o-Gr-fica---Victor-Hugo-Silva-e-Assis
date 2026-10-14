@@ -2,7 +2,7 @@
 Prof. Rodrigo Fernandes dos Santos. Computação Gráfica, Unipac Barbacena.
 
 ## Ambiente
-Python 3.11 a 3.13, Pygame 2.6.1, PyOpenGL 3.1.10 e NumPy 1.26 ou 2.x.
+Python 3.11 a 3.14, PyOpenGL 3.1.10 e NumPy 1.26 ou 2.x. Usa Pygame 2.6.1 até Python 3.13 e pygame-ce 2.5.8 no Python 3.14.
 A placa de vídeo precisa oferecer OpenGL 3.3 core.
 
 ## Windows (PowerShell)
@@ -57,3 +57,10 @@ ESC fecha a janela. P salva a captura em `capturas/resultado.png`.
 
 ## Referência
 STEMKOSKI, Lee; PASCALE, Michael. *Developing graphics frameworks with Python and OpenGL*. Boca Raton: CRC Press, 2022. Capítulo 3 (Matrix Algebra and Transformations).
+
+## Entrega da atividade
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Mini sistema solar (Transformações)
+- **Integrante:** Victor Hugo Silva e Assis
+- **Descrição:** Implementei a rotação do sol, a órbita e a rotação própria do planeta, e a órbita da lua hierarquicamente ligada ao planeta. As setas para cima e para baixo ajustam a velocidade da órbita sem permitir que ela fique negativa.
+- **Resposta da questão:** A composição `R @ T` primeiro desloca o planeta até o raio da órbita e depois gira essa posição ao redor do sol. A rotação própria fica à direita da translação porque é aplicada primeiro às coordenadas locais do planeta; assim, ele gira em torno do próprio centro sem alterar a distância ao sol.

@@ -1,7 +1,7 @@
 # Aula de Texturas: Python e OpenGL
 Professor Rodrigo Fernandes dos Santos. Ciência da Computação.
 ## Ambiente
-Python 3.11 a 3.13, Pygame 2.6.1, PyOpenGL 3.1.10, NumPy 1.26 ou 2.x.
+Python 3.11 a 3.14, PyOpenGL 3.1.10, NumPy 1.26 ou 2.x. Usa Pygame 2.6.1 até Python 3.13 e pygame-ce 2.5.8 no Python 3.14.
 A placa e o driver devem oferecer contexto OpenGL 3.2 core e GLSL 150.
 A instalação das dependências requer internet uma vez. A aula usa texturas locais e funciona sem downloads depois da instalação.
 ## Windows (PowerShell)
@@ -48,6 +48,13 @@ Rotação irregular: use velocidade em radianos por segundo multiplicada por del
 STEMKOSKI, Lee; PASCALE, Michael. Developing graphics frameworks with Python and OpenGL. Boca Raton: CRC Press, 2022. DOI: 10.1201/9781003181378. Seções 5.1 a 5.4.
 Documentação: https://www.pygame.org/docs/ref/display.html e https://pyopengl.sourceforge.net/documentation/manual-3.0/glUniform.html
 As texturas foram criadas para este material e podem ser usadas na atividade.
+
+## Entrega da atividade
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Cubo com satélite texturizado (Texturas)
+- **Integrante:** Victor Hugo Silva e Assis
+- **Descrição:** Apliquei `mosaico.png` ao cubo principal e criei um cubo satélite filho, com `grade_uv.png` repetida 2x2, afastado do centro e em escala reduzida. O cubo principal tem rotação controlada pelas setas, e o satélite também gira em torno do próprio eixo X.
+- **Resposta da questão:** As coordenadas UV associam os vértices da geometria a posições correspondentes na imagem da textura. Com `repeatUV = [2,2]`, as coordenadas são duplicadas nos eixos U e V, repetindo a textura duas vezes em cada direção (quatro repetições por face).
 
 ## Verificação realizada
 Os dois exemplos e a solução do professor renderizaram com OpenGL 4.5 core (Mesa) em Linux e Python 3.12.14, e também no macOS com Python 3.13.2 (Pygame 2.6.1, PyOpenGL 3.1.10, NumPy 2.5.2). Shaders compilaram e o ciclo de desenho terminou sem erro OpenGL. A orientação da grade foi conferida nas capturas. O Windows tem instruções e contexto 3.2 core preparado, mas não foi testado diretamente. No macOS, Material cria um VAO temporário antes de compilar os shaders, pois o perfil core exige um VAO vinculado na validação do programa.

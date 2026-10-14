@@ -8,5 +8,12 @@ professor/
 **/professor/
 # capturas geradas pelos alunos durante a execução
 capturas/
+# capturas finais exigidas para as atividades concluídas
+!Aula_Transformacoes/alunos/capturas/
+!Aula_Transformacoes/alunos/capturas/resultado.png
+!Aula_GrafoCena/alunos/capturas/
+!Aula_GrafoCena/alunos/capturas/resultado.png
+!Aula_Texturas/alunos/capturas/
+!Aula_Texturas/alunos/capturas/resultado.png
 # arquivos temporários do Office (deck aberto)
 ~$*

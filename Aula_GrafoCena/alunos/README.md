@@ -2,7 +2,7 @@
 Prof. Rodrigo Fernandes dos Santos. Computação Gráfica, Unipac Barbacena.
 
 ## Ambiente
-Python 3.11 a 3.13, Pygame 2.6.1, PyOpenGL 3.1.10 e NumPy 1.26 ou 2.x.
+Python 3.11 a 3.14, PyOpenGL 3.1.10 e NumPy 1.26 ou 2.x. Usa Pygame 2.6.1 até Python 3.13 e pygame-ce 2.5.8 no Python 3.14.
 A placa de vídeo precisa oferecer OpenGL 3.2 core.
 
 ## Windows (PowerShell)
@@ -58,3 +58,10 @@ ESC fecha a janela. P salva a captura em `capturas/resultado.png`.
 
 ## Referência
 STEMKOSKI, Lee; PASCALE, Michael. *Developing graphics frameworks with Python and OpenGL*. Boca Raton: CRC Press, 2022. Capítulo 4 (A Scene Graph Framework).
+
+## Entrega da atividade
+- **Disciplina:** Computação Gráfica
+- **Atividade:** Braço robótico (Grafo de cena)
+- **Integrante:** Victor Hugo Silva e Assis
+- **Descrição:** Montei o braço como uma hierarquia de objetos: a base contém o pivô do ombro, que controla o braço e o pivô do cotovelo; o cotovelo controla o antebraço e a garra. As teclas A/D, W/S e I/K controlam a base, o ombro e o cotovelo.
+- **Resposta da questão:** Os pivôs `Object3D` definem os centros das articulações. As caixas são centradas na origem local e, sozinhas, girariam em torno do próprio centro; ligando-as aos pivôs como filhos e posicionando-as em relação a eles, cada segmento gira pela ponta e leva consigo os objetos descendentes.
